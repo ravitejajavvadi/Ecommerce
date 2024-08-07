@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Functional Suite">
+  <test thread-count="2" name="Test" parallel="methods">
+    
+        <parameter name="env" value="Stage"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+       <parameter name="emailid" value="raviteja@gmail.com"></parameter>
+       <parameter name="url" value="https://www.amazon.in/"></parameter>
+       <parameter name="Username" value="raviteja"></parameter>
+       <parameter name="pwd" value="Abc@12345"></parameter>
+ <groups>
+		 <run>
+			  <include name="regression"></include>
+			   <include name="smoke"></include>
+			  <include name="sanity"></include>
+		  </run>
+	  </groups>
+    <classes>
+      <!--class name="com.testNG.AnatotaionsDemo"/-->
+      <!--class name="com.testNG.LaunchBrowser"/-->
+      <!--class name="com.testNG.Setup"/-->
+      <!--class name="com.testNG.HomePage"/-->
+       <class name="com.testNG.BaseTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Functional Suite -->
