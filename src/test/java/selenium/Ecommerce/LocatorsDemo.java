@@ -13,8 +13,8 @@ public class LocatorsDemo {
 		driver.manage().window().maximize();
 		driver.get("https://adactinhotelapp.com/index.php");
 		
-	//id	
-//		driver.findElement(By.id("username")).sendKeys("Admin");
+//	id	
+		driver.findElement(By.id("username")).sendKeys("Admin");
 		
 	//name
 		
